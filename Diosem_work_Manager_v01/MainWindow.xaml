@@ -543,6 +543,6 @@
         <TextBox Grid.Column="21 " Grid.Row="6" Grid.ColumnSpan="9" Grid.RowSpan="28" Margin="30 0 10 0" x:Name="workSummaryText" AcceptsReturn="True"/>
             
     </Grid>
-      
+       
 </Window>
  

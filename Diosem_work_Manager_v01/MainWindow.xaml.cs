@@ -32,7 +32,13 @@ namespace WpfApp3
 
             // 작업자 체크박스가 들어있는 workerList 비움.
             workerList.Clear();
+            // 리스트 안에 작업자 전원 추가(Add)
+            AddWorkerToList();
 
+        }
+
+        private void AddWorkerToList()
+        {
             // 리스트안에 작업자 전원 추가(Add)
             workerList.Add(이상엽);
             workerList.Add(강범일);
@@ -49,724 +55,169 @@ namespace WpfApp3
             workerList.Add(조용준);
             workerList.Add(김민우);
             workerList.Add(신지호);
-
         }
 
-
-        private void sylee_Checked(object sender, RoutedEventArgs e)
+        private void RadioBtnCheck(string name)
         {
+
             // 라디오버튼 1번이 선택된채로 이상엽 버튼이 눌리면
             // workerName1에 이상엽, 추가
             // 이하 라디오버튼 10번까지 동일
-
             if (radio1.IsChecked == true)
             {
-                workerName1.Text += "이상엽, ";
+                workerName1.Text += $"{name}, ";
             }
             else if (radio2.IsChecked == true)
             {
-                workerName2.Text += "이상엽, ";
+                workerName2.Text += $"{name}, ";
             }
             else if (radio3.IsChecked == true)
             {
-                workerName3.Text += "이상엽, ";
+                workerName3.Text += $"{name}, ";
             }
             else if (radio4.IsChecked == true)
             {
-                workerName4.Text += "이상엽, ";
+                workerName4.Text += $"{name}, ";
             }
             else if (radio5.IsChecked == true)
             {
-                workerName5.Text += "이상엽, ";
+                workerName5.Text += $"{name}, ";
             }
             else if (radio6.IsChecked == true)
             {
-                workerName6.Text += "이상엽, ";
+                workerName6.Text += $"{name}, ";
             }
             else if (radio7.IsChecked == true)
             {
-                workerName7.Text += "이상엽, ";
+                workerName7.Text += $"{name}, ";
             }
             else if (radio8.IsChecked == true)
             {
-                workerName8.Text += "이상엽, ";
+                workerName8.Text += $"{name}, ";
             }
             else if (radio9.IsChecked == true)
             {
-                workerName9.Text += "이상엽, ";
+                workerName9.Text += $"{name}, ";
             }
             else if (radio10.IsChecked == true)
             {
-                workerName10.Text += "이상엽, ";
+                workerName10.Text += $"{name}, ";
             }
+        }
+
+        private void sylee_Checked(object sender, RoutedEventArgs e)
+        {
+
+            RadioBtnCheck("이상엽");
+            
         }
 
         private void bikang_Checked(object sender, RoutedEventArgs e)
         {
-            if (radio1.IsChecked == true)
-            {
-                workerName1.Text += "강범일, ";
-            }
-            else if (radio2.IsChecked == true)
-            {
-                workerName2.Text += "강범일, ";
-            }
-            else if (radio3.IsChecked == true)
-            {
-                workerName3.Text += "강범일, ";
-            }
-            else if (radio4.IsChecked == true)
-            {
-                workerName4.Text += "강범일, ";
-            }
-            else if (radio5.IsChecked == true)
-            {
-                workerName5.Text += "강범일, ";
-            }
-            else if (radio6.IsChecked == true)
-            {
-                workerName6.Text += "강범일, ";
-            }
-            else if (radio7.IsChecked == true)
-            {
-                workerName7.Text += "강범일, ";
-            }
-            else if (radio8.IsChecked == true)
-            {
-                workerName8.Text += "강범일, ";
-            }
-            else if (radio9.IsChecked == true)
-            {
-                workerName9.Text += "강범일, ";
-            }
-            else if (radio10.IsChecked == true)
-            {
-                workerName10.Text += "강범일, ";
-            }
+            RadioBtnCheck("강범일");
         }
 
         private void kschoi_Checked(object sender, RoutedEventArgs e)
         {
-            if (radio1.IsChecked == true)
-            {
-                workerName1.Text += "최광섭, ";
-            }
-            else if (radio2.IsChecked == true)
-            {
-                workerName2.Text += "최광섭, ";
-            }
-            else if (radio3.IsChecked == true)
-            {
-                workerName3.Text += "최광섭, ";
-            }
-            else if (radio4.IsChecked == true)
-            {
-                workerName4.Text += "최광섭, ";
-            }
-            else if (radio5.IsChecked == true)
-            {
-                workerName5.Text += "최광섭, ";
-            }
-            else if (radio6.IsChecked == true)
-            {
-                workerName6.Text += "최광섭, ";
-            }
-            else if (radio7.IsChecked == true)
-            {
-                workerName7.Text += "최광섭, ";
-            }
-            else if (radio8.IsChecked == true)
-            {
-                workerName8.Text += "최광섭, ";
-            }
-            else if (radio9.IsChecked == true)
-            {
-                workerName9.Text += "최광섭, ";
-            }
-            else if (radio10.IsChecked == true)
-            {
-                workerName10.Text += "최광섭, ";
-            }
+            RadioBtnCheck("최광섭");
         }
 
         private void jtkim_Checked(object sender, RoutedEventArgs e)
         {
-            if (radio1.IsChecked == true)
-            {
-                workerName1.Text += "김진탁, ";
-            }
-            else if (radio2.IsChecked == true)
-            {
-                workerName2.Text += "김진탁, ";
-            }
-            else if (radio3.IsChecked == true)
-            {
-                workerName3.Text += "김진탁, ";
-            }
-            else if (radio4.IsChecked == true)
-            {
-                workerName4.Text += "김진탁, ";
-            }
-            else if (radio5.IsChecked == true)
-            {
-                workerName5.Text += "김진탁, ";
-            }
-            else if (radio6.IsChecked == true)
-            {
-                workerName6.Text += "김진탁, ";
-            }
-            else if (radio7.IsChecked == true)
-            {
-                workerName7.Text += "김진탁, ";
-            }
-            else if (radio8.IsChecked == true)
-            {
-                workerName8.Text += "김진탁, ";
-            }
-            else if (radio9.IsChecked == true)
-            {
-                workerName9.Text += "김진탁, ";
-            }
-            else if (radio10.IsChecked == true)
-            {
-                workerName10.Text += "김진탁, ";
-            }
+            RadioBtnCheck("김진탁");
         }
 
         private void khcho_Checked(object sender, RoutedEventArgs e)
         {
-            if (radio1.IsChecked == true)
-            {
-                workerName1.Text += "조광호, ";
-            }
-            else if (radio2.IsChecked == true)
-            {
-                workerName2.Text += "조광호, ";
-            }
-            else if (radio3.IsChecked == true)
-            {
-                workerName3.Text += "조광호, ";
-            }
-            else if (radio4.IsChecked == true)
-            {
-                workerName4.Text += "조광호, ";
-            }
-            else if (radio5.IsChecked == true)
-            {
-                workerName5.Text += "조광호, ";
-            }
-            else if (radio6.IsChecked == true)
-            {
-                workerName6.Text += "조광호, ";
-            }
-            else if (radio7.IsChecked == true)
-            {
-                workerName7.Text += "조광호, ";
-            }
-            else if (radio8.IsChecked == true)
-            {
-                workerName8.Text += "조광호, ";
-            }
-            else if (radio9.IsChecked == true)
-            {
-                workerName9.Text += "조광호, ";
-            }
-            else if (radio10.IsChecked == true)
-            {
-                workerName10.Text += "조광호, ";
-            }
+            RadioBtnCheck("조광호");
         }
 
         private void tykim_Checked(object sender, RoutedEventArgs e)
         {
-            if (radio1.IsChecked == true)
-            {
-                workerName1.Text += "김태영, ";
-            }
-            else if (radio2.IsChecked == true)
-            {
-                workerName2.Text += "김태영, ";
-            }
-            else if (radio3.IsChecked == true)
-            {
-                workerName3.Text += "김태영, ";
-            }
-            else if (radio4.IsChecked == true)
-            {
-                workerName4.Text += "김태영, ";
-            }
-            else if (radio5.IsChecked == true)
-            {
-                workerName5.Text += "김태영, ";
-            }
-            else if (radio6.IsChecked == true)
-            {
-                workerName6.Text += "김태영, ";
-            }
-            else if (radio7.IsChecked == true)
-            {
-                workerName7.Text += "김태영, ";
-            }
-            else if (radio8.IsChecked == true)
-            {
-                workerName8.Text += "김태영, ";
-            }
-            else if (radio9.IsChecked == true)
-            {
-                workerName9.Text += "김태영, ";
-            }
-            else if (radio10.IsChecked == true)
-            {
-                workerName10.Text += "김태영, ";
-            }
+            RadioBtnCheck("김태영");
         }
 
         private void hcchoi_Checked(object sender, RoutedEventArgs e)
         {
-            if (radio1.IsChecked == true)
-            {
-                workerName1.Text += "최현철, ";
-            }
-            else if (radio2.IsChecked == true)
-            {
-                workerName2.Text += "최현철, ";
-            }
-            else if (radio3.IsChecked == true)
-            {
-                workerName3.Text += "최현철, ";
-            }
-            else if (radio4.IsChecked == true)
-            {
-                workerName4.Text += "최현철, ";
-            }
-            else if (radio5.IsChecked == true)
-            {
-                workerName5.Text += "최현철, ";
-            }
-            else if (radio6.IsChecked == true)
-            {
-                workerName6.Text += "최현철, ";
-            }
-            else if (radio7.IsChecked == true)
-            {
-                workerName7.Text += "최현철, ";
-            }
-            else if (radio8.IsChecked == true)
-            {
-                workerName8.Text += "최현철, ";
-            }
-            else if (radio9.IsChecked == true)
-            {
-                workerName9.Text += "최현철, ";
-            }
-            else if (radio10.IsChecked == true)
-            {
-                workerName10.Text += "최현철, ";
-            }
+            RadioBtnCheck("최현철");
         }
 
         private void jwshin_Checked(object sender, RoutedEventArgs e)
         {
-            if (radio1.IsChecked == true)
-            {
-                workerName1.Text += "신재웅, ";
-            }
-            else if (radio2.IsChecked == true)
-            {
-                workerName2.Text += "신재웅, ";
-            }
-            else if (radio3.IsChecked == true)
-            {
-                workerName3.Text += "신재웅, ";
-            }
-            else if (radio4.IsChecked == true)
-            {
-                workerName4.Text += "신재웅, ";
-            }
-            else if (radio5.IsChecked == true)
-            {
-                workerName5.Text += "신재웅, ";
-            }
-            else if (radio6.IsChecked == true)
-            {
-                workerName6.Text += "신재웅, ";
-            }
-            else if (radio7.IsChecked == true)
-            {
-                workerName7.Text += "신재웅, ";
-            }
-            else if (radio8.IsChecked == true)
-            {
-                workerName8.Text += "신재웅, ";
-            }
-            else if (radio9.IsChecked == true)
-            {
-                workerName9.Text += "신재웅, ";
-            }
-            else if (radio10.IsChecked == true)
-            {
-                workerName10.Text += "신재웅, ";
-            }
+            RadioBtnCheck("신재웅");
         }
 
         private void jsno_Checked(object sender, RoutedEventArgs e)
         {
-            if (radio1.IsChecked == true)
-            {
-                workerName1.Text += "노진성, ";
-            }
-            else if (radio2.IsChecked == true)
-            {
-                workerName2.Text += "노진성, ";
-            }
-            else if (radio3.IsChecked == true)
-            {
-                workerName3.Text += "노진성, ";
-            }
-            else if (radio4.IsChecked == true)
-            {
-                workerName4.Text += "노진성, ";
-            }
-            else if (radio5.IsChecked == true)
-            {
-                workerName5.Text += "노진성, ";
-            }
-            else if (radio6.IsChecked == true)
-            {
-                workerName6.Text += "노진성, ";
-            }
-            else if (radio7.IsChecked == true)
-            {
-                workerName7.Text += "노진성, ";
-            }
-            else if (radio8.IsChecked == true)
-            {
-                workerName8.Text += "노진성, ";
-            }
-            else if (radio9.IsChecked == true)
-            {
-                workerName9.Text += "노진성, ";
-            }
-            else if (radio10.IsChecked == true)
-            {
-                workerName10.Text += "노진성, ";
-            }
+            RadioBtnCheck("노진성");
         }
 
         private void dbjang_Checked(object sender, RoutedEventArgs e)
         {
-            if (radio1.IsChecked == true)
-            {
-                workerName1.Text += "장다빈, ";
-            }
-            else if (radio2.IsChecked == true)
-            {
-                workerName2.Text += "장다빈, ";
-            }
-            else if (radio3.IsChecked == true)
-            {
-                workerName3.Text += "장다빈, ";
-            }
-            else if (radio4.IsChecked == true)
-            {
-                workerName4.Text += "장다빈, ";
-            }
-            else if (radio5.IsChecked == true)
-            {
-                workerName5.Text += "장다빈, ";
-            }
-            else if (radio6.IsChecked == true)
-            {
-                workerName6.Text += "장다빈, ";
-            }
-            else if (radio7.IsChecked == true)
-            {
-                workerName7.Text += "장다빈, ";
-            }
-            else if (radio8.IsChecked == true)
-            {
-                workerName8.Text += "장다빈, ";
-            }
-            else if (radio9.IsChecked == true)
-            {
-                workerName9.Text += "장다빈, ";
-            }
-            else if (radio10.IsChecked == true)
-            {
-                workerName10.Text += "장다빈, ";
-            }
+            RadioBtnCheck("장다빈");
         }
 
         private void syim_Checked(object sender, RoutedEventArgs e)
         {
-            if (radio1.IsChecked == true)
-            {
-                workerName1.Text += "임성용, ";
-            }
-            else if (radio2.IsChecked == true)
-            {
-                workerName2.Text += "임성용, ";
-            }
-            else if (radio3.IsChecked == true)
-            {
-                workerName3.Text += "임성용, ";
-            }
-            else if (radio4.IsChecked == true)
-            {
-                workerName4.Text += "임성용, ";
-            }
-            else if (radio5.IsChecked == true)
-            {
-                workerName5.Text += "임성용, ";
-            }
-            else if (radio6.IsChecked == true)
-            {
-                workerName6.Text += "임성용, ";
-            }
-            else if (radio7.IsChecked == true)
-            {
-                workerName7.Text += "임성용, ";
-            }
-            else if (radio8.IsChecked == true)
-            {
-                workerName8.Text += "임성용, ";
-            }
-            else if (radio9.IsChecked == true)
-            {
-                workerName9.Text += "임성용, ";
-            }
-            else if (radio10.IsChecked == true)
-            {
-                workerName10.Text += "임성용, ";
-            }
+            RadioBtnCheck("임성용");
         }
 
         private void ydkwon_Checked(object sender, RoutedEventArgs e)
         {
-            if (radio1.IsChecked == true)
-            {
-                workerName1.Text += "권용덕, ";
-            }
-            else if (radio2.IsChecked == true)
-            {
-                workerName2.Text += "권용덕, ";
-            }
-            else if (radio3.IsChecked == true)
-            {
-                workerName3.Text += "권용덕, ";
-            }
-            else if (radio4.IsChecked == true)
-            {
-                workerName4.Text += "권용덕, ";
-            }
-            else if (radio5.IsChecked == true)
-            {
-                workerName5.Text += "권용덕, ";
-            }
-            else if (radio6.IsChecked == true)
-            {
-                workerName6.Text += "권용덕, ";
-            }
-            else if (radio7.IsChecked == true)
-            {
-                workerName7.Text += "권용덕, ";
-            }
-            else if (radio8.IsChecked == true)
-            {
-                workerName8.Text += "권용덕, ";
-            }
-            else if (radio9.IsChecked == true)
-            {
-                workerName9.Text += "권용덕, ";
-            }
-            else if (radio10.IsChecked == true)
-            {
-                workerName10.Text += "권용덕, ";
-            }
+            RadioBtnCheck("권용덕");
         }
 
         private void yjcho_Checked(object sender, RoutedEventArgs e)
         {
-            if (radio1.IsChecked == true)
-            {
-                workerName1.Text += "조용준, ";
-            }
-            else if (radio2.IsChecked == true)
-            {
-                workerName2.Text += "조용준, ";
-            }
-            else if (radio3.IsChecked == true)
-            {
-                workerName3.Text += "조용준, ";
-            }
-            else if (radio4.IsChecked == true)
-            {
-                workerName4.Text += "조용준, ";
-            }
-            else if (radio5.IsChecked == true)
-            {
-                workerName5.Text += "조용준, ";
-            }
-            else if (radio6.IsChecked == true)
-            {
-                workerName6.Text += "조용준, ";
-            }
-            else if (radio7.IsChecked == true)
-            {
-                workerName7.Text += "조용준, ";
-            }
-            else if (radio8.IsChecked == true)
-            {
-                workerName8.Text += "조용준, ";
-            }
-            else if (radio9.IsChecked == true)
-            {
-                workerName9.Text += "조용준, ";
-            }
-            else if (radio10.IsChecked == true)
-            {
-                workerName10.Text += "조용준, ";
-            }
+            RadioBtnCheck("조용준");
         }
 
         private void mwkim_Checked(object sender, RoutedEventArgs e)
         {
-            if (radio1.IsChecked == true)
-            {
-                workerName1.Text += "김민우, ";
-            }
-            else if (radio2.IsChecked == true)
-            {
-                workerName2.Text += "김민우, ";
-            }
-            else if (radio3.IsChecked == true)
-            {
-                workerName3.Text += "김민우, ";
-            }
-            else if (radio4.IsChecked == true)
-            {
-                workerName4.Text += "김민우, ";
-            }
-            else if (radio5.IsChecked == true)
-            {
-                workerName5.Text += "김민우, ";
-            }
-            else if (radio6.IsChecked == true)
-            {
-                workerName6.Text += "김민우, ";
-            }
-            else if (radio7.IsChecked == true)
-            {
-                workerName7.Text += "김민우, ";
-            }
-            else if (radio8.IsChecked == true)
-            {
-                workerName8.Text += "김민우, ";
-            }
-            else if (radio9.IsChecked == true)
-            {
-                workerName9.Text += "김민우, ";
-            }
-            else if (radio10.IsChecked == true)
-            {
-                workerName10.Text += "김민우, ";
-            }
+            RadioBtnCheck("김민우");
         }
 
         private void jhshin_Checked(object sender, RoutedEventArgs e)
         {
-            if (radio1.IsChecked == true)
-            {
-                workerName1.Text += "신지호, ";
-            }
-            else if (radio2.IsChecked == true)
-            {
-                workerName2.Text += "신지호, ";
-            }
-            else if (radio3.IsChecked == true)
-            {
-                workerName3.Text += "신지호, ";
-            }
-            else if (radio4.IsChecked == true)
-            {
-                workerName4.Text += "신지호, ";
-            }
-            else if (radio5.IsChecked == true)
-            {
-                workerName5.Text += "신지호, ";
-            }
-            else if (radio6.IsChecked == true)
-            {
-                workerName6.Text += "신지호, ";
-            }
-            else if (radio7.IsChecked == true)
-            {
-                workerName7.Text += "신지호, ";
-            }
-            else if (radio8.IsChecked == true)
-            {
-                workerName8.Text += "신지호, ";
-            }
-            else if (radio9.IsChecked == true)
-            {
-                workerName9.Text += "신지호, ";
-            }
-            else if (radio10.IsChecked == true)
-            {
-                workerName10.Text += "신지호, ";
-            }
+            RadioBtnCheck("신지호");
+        }
+
+
+        private void UncheckedName(string name)
+        {
+            // name 체크박스가 해제되면
+            // workerName1~10까지 모든 작업에서 name 이름을 제거
+            workerName1.Text = workerName1.Text.Replace($"{name}, ", "");
+            workerName2.Text = workerName2.Text.Replace($"{name}, ", "");
+            workerName3.Text = workerName3.Text.Replace($"{name}, ", "");
+            workerName4.Text = workerName4.Text.Replace($"{name}, ", "");
+            workerName5.Text = workerName5.Text.Replace($"{name}, ", "");
+            workerName6.Text = workerName6.Text.Replace($"{name}, ", "");
+            workerName7.Text = workerName7.Text.Replace($"{name}, ", "");
+            workerName8.Text = workerName8.Text.Replace($"{name}, ", "");
+            workerName9.Text = workerName9.Text.Replace($"{name}, ", "");
+            workerName10.Text = workerName10.Text.Replace($"{name}, ", "");
         }
 
 
 
         private void sylee_Unchecked(object sender, RoutedEventArgs e)
         {
-            // 이상엽 체크박스가 해제되면
-            // workerName1~10까지 모든 작업에서 이상엽 이름을 제거하고
-            // 리스트 workerList에 다시 선택가능하도록 이상엽 체크박스 추가(Add)
-
-            workerName1.Text = workerName1.Text.Replace($"이상엽, ", "");
-            workerName2.Text = workerName2.Text.Replace($"이상엽, ", "");
-            workerName3.Text = workerName3.Text.Replace($"이상엽, ", "");
-            workerName4.Text = workerName4.Text.Replace($"이상엽, ", "");
-            workerName5.Text = workerName5.Text.Replace($"이상엽, ", "");
-            workerName6.Text = workerName6.Text.Replace($"이상엽, ", "");
-            workerName7.Text = workerName7.Text.Replace($"이상엽, ", "");
-            workerName8.Text = workerName8.Text.Replace($"이상엽, ", "");
-            workerName9.Text = workerName9.Text.Replace($"이상엽, ", "");
-            workerName10.Text = workerName10.Text.Replace($"이상엽, ", "");
-
+            UncheckedName("이상엽");
+            // 리스트 workerList에 다시 선택가능하도록 name 체크박스 추가(Add)
             workerList.Add(이상엽);
         }
 
         private void bikang_Unchecked(object sender, RoutedEventArgs e)
         {
-            workerName1.Text = workerName1.Text.Replace($"강범일, ", "");
-            workerName2.Text = workerName2.Text.Replace($"강범일, ", "");
-            workerName3.Text = workerName3.Text.Replace($"강범일, ", "");
-            workerName4.Text = workerName4.Text.Replace($"강범일, ", "");
-            workerName5.Text = workerName5.Text.Replace($"강범일, ", "");
-            workerName6.Text = workerName6.Text.Replace($"강범일, ", "");
-            workerName7.Text = workerName7.Text.Replace($"강범일, ", "");
-            workerName8.Text = workerName8.Text.Replace($"강범일, ", "");
-            workerName9.Text = workerName9.Text.Replace($"강범일, ", "");
-            workerName10.Text = workerName10.Text.Replace($"강범일, ", "");
+            UncheckedName("강범일");
 
             workerList.Add(강범일);
         }
 
         private void kschoi_Unchecked(object sender, RoutedEventArgs e)
         {
-            workerName1.Text = workerName1.Text.Replace($"최광섭, ", "");
-            workerName2.Text = workerName2.Text.Replace($"최광섭, ", "");
-            workerName3.Text = workerName3.Text.Replace($"최광섭, ", "");
-            workerName4.Text = workerName4.Text.Replace($"최광섭, ", "");
-            workerName5.Text = workerName5.Text.Replace($"최광섭, ", "");
-            workerName6.Text = workerName6.Text.Replace($"최광섭, ", "");
-            workerName7.Text = workerName7.Text.Replace($"최광섭, ", "");
-            workerName8.Text = workerName8.Text.Replace($"최광섭, ", "");
-            workerName9.Text = workerName9.Text.Replace($"최광섭, ", "");
-            workerName10.Text = workerName10.Text.Replace($"최광섭, ", "");
+            UncheckedName("최광섭");
 
             workerList.Add(최광섭);
 
@@ -774,192 +225,84 @@ namespace WpfApp3
 
         private void jtkim_Unchecked(object sender, RoutedEventArgs e)
         {
-            workerName1.Text = workerName1.Text.Replace($"김진탁, ", "");
-            workerName2.Text = workerName2.Text.Replace($"김진탁, ", "");
-            workerName3.Text = workerName3.Text.Replace($"김진탁, ", "");
-            workerName4.Text = workerName4.Text.Replace($"김진탁, ", "");
-            workerName5.Text = workerName5.Text.Replace($"김진탁, ", "");
-            workerName6.Text = workerName6.Text.Replace($"김진탁, ", "");
-            workerName7.Text = workerName7.Text.Replace($"김진탁, ", "");
-            workerName8.Text = workerName8.Text.Replace($"김진탁, ", "");
-            workerName9.Text = workerName9.Text.Replace($"김진탁, ", "");
-            workerName10.Text = workerName10.Text.Replace($"김진탁, ", "");
+            UncheckedName("김진탁");
 
             workerList.Add(김진탁);
         }
 
         private void khcho_Unchecked(object sender, RoutedEventArgs e)
         {
-            workerName1.Text = workerName1.Text.Replace($"조광호, ", "");
-            workerName2.Text = workerName2.Text.Replace($"조광호, ", "");
-            workerName3.Text = workerName3.Text.Replace($"조광호, ", "");
-            workerName4.Text = workerName4.Text.Replace($"조광호, ", "");
-            workerName5.Text = workerName5.Text.Replace($"조광호, ", "");
-            workerName6.Text = workerName6.Text.Replace($"조광호, ", "");
-            workerName7.Text = workerName7.Text.Replace($"조광호, ", "");
-            workerName8.Text = workerName8.Text.Replace($"조광호, ", "");
-            workerName9.Text = workerName9.Text.Replace($"조광호, ", "");
-            workerName10.Text = workerName10.Text.Replace($"조광호, ", "");
+            UncheckedName("조광호");
 
             workerList.Add(조광호);
         }
 
         private void tykim_Unchecked(object sender, RoutedEventArgs e)
         {
-            workerName1.Text = workerName1.Text.Replace($"김태영, ", "");
-            workerName2.Text = workerName2.Text.Replace($"김태영, ", "");
-            workerName3.Text = workerName3.Text.Replace($"김태영, ", "");
-            workerName4.Text = workerName4.Text.Replace($"김태영, ", "");
-            workerName5.Text = workerName5.Text.Replace($"김태영, ", "");
-            workerName6.Text = workerName6.Text.Replace($"김태영, ", "");
-            workerName7.Text = workerName7.Text.Replace($"김태영, ", "");
-            workerName8.Text = workerName8.Text.Replace($"김태영, ", "");
-            workerName9.Text = workerName9.Text.Replace($"김태영, ", "");
-            workerName10.Text = workerName10.Text.Replace($"김태영, ", "");
+            UncheckedName("김태영");
 
             workerList.Add(김태영);
         }
 
         private void hcchoi_Unchecked(object sender, RoutedEventArgs e)
         {
-            workerName1.Text = workerName1.Text.Replace($"최현철, ", "");
-            workerName2.Text = workerName2.Text.Replace($"최현철, ", "");
-            workerName3.Text = workerName3.Text.Replace($"최현철, ", "");
-            workerName4.Text = workerName4.Text.Replace($"최현철, ", "");
-            workerName5.Text = workerName5.Text.Replace($"최현철, ", "");
-            workerName6.Text = workerName6.Text.Replace($"최현철, ", "");
-            workerName7.Text = workerName7.Text.Replace($"최현철, ", "");
-            workerName8.Text = workerName8.Text.Replace($"최현철, ", "");
-            workerName9.Text = workerName9.Text.Replace($"최현철, ", "");
-            workerName10.Text = workerName10.Text.Replace($"최현철, ", "");
+            UncheckedName("최현철");
 
             workerList.Add(최현철);
         }
 
         private void jwshin_Unchecked(object sender, RoutedEventArgs e)
         {
-            workerName1.Text = workerName1.Text.Replace($"신재웅, ", "");
-            workerName2.Text = workerName2.Text.Replace($"신재웅, ", "");
-            workerName3.Text = workerName3.Text.Replace($"신재웅, ", "");
-            workerName4.Text = workerName4.Text.Replace($"신재웅, ", "");
-            workerName5.Text = workerName5.Text.Replace($"신재웅, ", "");
-            workerName6.Text = workerName6.Text.Replace($"신재웅, ", "");
-            workerName7.Text = workerName7.Text.Replace($"신재웅, ", "");
-            workerName8.Text = workerName8.Text.Replace($"신재웅, ", "");
-            workerName9.Text = workerName9.Text.Replace($"신재웅, ", "");
-            workerName10.Text = workerName10.Text.Replace($"신재웅, ", "");
+            UncheckedName("신재웅");
 
             workerList.Add(신재웅);
         }
 
         private void jsno_Unchecked(object sender, RoutedEventArgs e)
         {
-            workerName1.Text = workerName1.Text.Replace($"노진성, ", "");
-            workerName2.Text = workerName2.Text.Replace($"노진성, ", "");
-            workerName3.Text = workerName3.Text.Replace($"노진성, ", "");
-            workerName4.Text = workerName4.Text.Replace($"노진성, ", "");
-            workerName5.Text = workerName5.Text.Replace($"노진성, ", "");
-            workerName6.Text = workerName6.Text.Replace($"노진성, ", "");
-            workerName7.Text = workerName7.Text.Replace($"노진성, ", "");
-            workerName8.Text = workerName8.Text.Replace($"노진성, ", "");
-            workerName9.Text = workerName9.Text.Replace($"노진성, ", "");
-            workerName10.Text = workerName10.Text.Replace($"노진성, ", "");
+            UncheckedName("노진성");
 
             workerList.Add(노진성);
         }
 
         private void dbjang_Unchecked(object sender, RoutedEventArgs e)
         {
-            workerName1.Text = workerName1.Text.Replace($"장다빈, ", "");
-            workerName2.Text = workerName2.Text.Replace($"장다빈, ", "");
-            workerName3.Text = workerName3.Text.Replace($"장다빈, ", "");
-            workerName4.Text = workerName4.Text.Replace($"장다빈, ", "");
-            workerName5.Text = workerName5.Text.Replace($"장다빈, ", "");
-            workerName6.Text = workerName6.Text.Replace($"장다빈, ", "");
-            workerName7.Text = workerName7.Text.Replace($"장다빈, ", "");
-            workerName8.Text = workerName8.Text.Replace($"장다빈, ", "");
-            workerName9.Text = workerName9.Text.Replace($"장다빈, ", "");
-            workerName10.Text = workerName10.Text.Replace($"장다빈, ", "");
+            UncheckedName("장다빈");
 
             workerList.Add(장다빈);
         }
 
         private void syim_Unchecked(object sender, RoutedEventArgs e)
         {
-            workerName1.Text = workerName1.Text.Replace($"임성용, ", "");
-            workerName2.Text = workerName2.Text.Replace($"임성용, ", "");
-            workerName3.Text = workerName3.Text.Replace($"임성용, ", "");
-            workerName4.Text = workerName4.Text.Replace($"임성용, ", "");
-            workerName5.Text = workerName5.Text.Replace($"임성용, ", "");
-            workerName6.Text = workerName6.Text.Replace($"임성용, ", "");
-            workerName7.Text = workerName7.Text.Replace($"임성용, ", "");
-            workerName8.Text = workerName8.Text.Replace($"임성용, ", "");
-            workerName9.Text = workerName9.Text.Replace($"임성용, ", "");
-            workerName10.Text = workerName10.Text.Replace($"임성용, ", "");
+            UncheckedName("임성용");
 
             workerList.Add(임성용);
         }
 
         private void ydkwon_Unchecked(object sender, RoutedEventArgs e)
         {
-            workerName1.Text = workerName1.Text.Replace($"권용덕, ", "");
-            workerName2.Text = workerName2.Text.Replace($"권용덕, ", "");
-            workerName3.Text = workerName3.Text.Replace($"권용덕, ", "");
-            workerName4.Text = workerName4.Text.Replace($"권용덕, ", "");
-            workerName5.Text = workerName5.Text.Replace($"권용덕, ", "");
-            workerName6.Text = workerName6.Text.Replace($"권용덕, ", "");
-            workerName7.Text = workerName7.Text.Replace($"권용덕, ", "");
-            workerName8.Text = workerName8.Text.Replace($"권용덕, ", "");
-            workerName9.Text = workerName9.Text.Replace($"권용덕, ", "");
-            workerName10.Text = workerName10.Text.Replace($"권용덕, ", "");
+            UncheckedName("권용덕");
 
             workerList.Add(권용덕);
         }
 
         private void yjcho_Unchecked(object sender, RoutedEventArgs e)
         {
-            workerName1.Text = workerName1.Text.Replace($"조용준, ", "");
-            workerName2.Text = workerName2.Text.Replace($"조용준, ", "");
-            workerName3.Text = workerName3.Text.Replace($"조용준, ", "");
-            workerName4.Text = workerName4.Text.Replace($"조용준, ", "");
-            workerName5.Text = workerName5.Text.Replace($"조용준, ", "");
-            workerName6.Text = workerName6.Text.Replace($"조용준, ", "");
-            workerName7.Text = workerName7.Text.Replace($"조용준, ", "");
-            workerName8.Text = workerName8.Text.Replace($"조용준, ", "");
-            workerName9.Text = workerName9.Text.Replace($"조용준, ", "");
-            workerName10.Text = workerName10.Text.Replace($"조용준, ", "");
+            UncheckedName("조용준");
 
             workerList.Add(조용준);
         }
 
         private void mwkim_Unchecked(object sender, RoutedEventArgs e)
         {
-            workerName1.Text = workerName1.Text.Replace($"김민우, ", "");
-            workerName2.Text = workerName2.Text.Replace($"김민우, ", "");
-            workerName3.Text = workerName3.Text.Replace($"김민우, ", "");
-            workerName4.Text = workerName4.Text.Replace($"김민우, ", "");
-            workerName5.Text = workerName5.Text.Replace($"김민우, ", "");
-            workerName6.Text = workerName6.Text.Replace($"김민우, ", "");
-            workerName7.Text = workerName7.Text.Replace($"김민우, ", "");
-            workerName8.Text = workerName8.Text.Replace($"김민우, ", "");
-            workerName9.Text = workerName9.Text.Replace($"김민우, ", "");
-            workerName10.Text = workerName10.Text.Replace($"김민우, ", "");
+            UncheckedName("김민우");
 
             workerList.Add(김민우);
         }
 
         private void jhshin_Unchecked(object sender, RoutedEventArgs e)
         {
-            workerName1.Text = workerName1.Text.Replace($"신지호, ", "");
-            workerName2.Text = workerName2.Text.Replace($"신지호, ", "");
-            workerName3.Text = workerName3.Text.Replace($"신지호, ", "");
-            workerName4.Text = workerName4.Text.Replace($"신지호, ", "");
-            workerName5.Text = workerName5.Text.Replace($"신지호, ", "");
-            workerName6.Text = workerName6.Text.Replace($"신지호, ", "");
-            workerName7.Text = workerName7.Text.Replace($"신지호, ", "");
-            workerName8.Text = workerName8.Text.Replace($"신지호, ", "");
-            workerName9.Text = workerName9.Text.Replace($"신지호, ", "");
-            workerName10.Text = workerName10.Text.Replace($"신지호, ", "");
+            UncheckedName("신지호");
 
             workerList.Add(신지호);
         }
@@ -989,21 +332,7 @@ namespace WpfApp3
 
             workerList.Clear();
 
-            workerList.Add(이상엽);
-            workerList.Add(강범일);
-            workerList.Add(최광섭);
-            workerList.Add(김진탁);
-            workerList.Add(조광호);
-            workerList.Add(김태영);
-            workerList.Add(최현철);
-            workerList.Add(신재웅);
-            workerList.Add(노진성);
-            workerList.Add(장다빈);
-            workerList.Add(임성용);
-            workerList.Add(권용덕);
-            workerList.Add(조용준);
-            workerList.Add(김민우);
-            workerList.Add(신지호);
+            AddWorkerToList();
 
         }
 
@@ -1282,6 +611,234 @@ namespace WpfApp3
                 MessageBox.Show("모든 작업자가 배정되었습니다.");
                 //MessageBox.Show(ex.ToString());
             }
+        }
+
+        private void UncheckNameContains()
+        {
+            // 전체 작업자 수만큼 for loop 돌면서
+            // Text Contains에 걸리는 모든 작업자의 체크박스 체크해제
+            for (int i = 0; i < 15; i++)
+            {
+                if (workerName1.Text.Contains("이상엽"))
+                {
+                    이상엽.SetCurrentValue(CheckBox.IsCheckedProperty, false);
+                }
+                else if (workerName1.Text.Contains("강범일"))
+                {
+                    강범일.SetCurrentValue(CheckBox.IsCheckedProperty, false);
+                }
+                else if (workerName1.Text.Contains("최광섭"))
+                {
+                    최광섭.SetCurrentValue(CheckBox.IsCheckedProperty, false);
+                }
+                else if (workerName1.Text.Contains("김진탁"))
+                {
+                    김진탁.SetCurrentValue(CheckBox.IsCheckedProperty, false);
+                }
+                else if (workerName1.Text.Contains("조광호"))
+                {
+                    조광호.SetCurrentValue(CheckBox.IsCheckedProperty, false);
+                }
+                else if (workerName1.Text.Contains("김태영"))
+                {
+                    김태영.SetCurrentValue(CheckBox.IsCheckedProperty, false);
+                }
+                else if (workerName1.Text.Contains("최현철"))
+                {
+                    최현철.SetCurrentValue(CheckBox.IsCheckedProperty, false);
+                }
+                else if (workerName1.Text.Contains("신재웅"))
+                {
+                    신재웅.SetCurrentValue(CheckBox.IsCheckedProperty, false);
+                }
+                else if (workerName1.Text.Contains("노진성"))
+                {
+                    노진성.SetCurrentValue(CheckBox.IsCheckedProperty, false);
+                }
+                else if (workerName1.Text.Contains("장다빈"))
+                {
+                    장다빈.SetCurrentValue(CheckBox.IsCheckedProperty, false);
+                }
+                else if (workerName1.Text.Contains("임성용"))
+                {
+                    임성용.SetCurrentValue(CheckBox.IsCheckedProperty, false);
+                }
+                else if (workerName1.Text.Contains("권용덕"))
+                {
+                    권용덕.SetCurrentValue(CheckBox.IsCheckedProperty, false);
+                }
+                else if (workerName1.Text.Contains("조용준"))
+                {
+                    조용준.SetCurrentValue(CheckBox.IsCheckedProperty, false);
+                }
+                else if (workerName1.Text.Contains("김민우"))
+                {
+                    김민우.SetCurrentValue(CheckBox.IsCheckedProperty, false);
+                }
+                else if (workerName1.Text.Contains("신지호"))
+                {
+                    신지호.SetCurrentValue(CheckBox.IsCheckedProperty, false);
+                }
+            }
+        }
+
+
+        private void delBtn1_Click(object sender, RoutedEventArgs e)
+        {
+            // 딜리트 버튼을 누르면
+            // 작업 정보에 들어 있던 모든 텍스트 Clear
+
+            time1.Clear();
+            charge1.Clear();
+            line1.Clear();
+            floor1.Clear();
+            bay1.Clear();
+            equipName1.Clear();
+            equipCode1.Clear();
+            equipNum1.Clear();
+            chamber1.Clear();
+
+            UncheckNameContains();
+
+        }
+        private void delBtn2_Click(object sender, RoutedEventArgs e)
+        {
+            time2.Clear();
+            charge2.Clear();
+            line2.Clear();
+            floor2.Clear();
+            bay2.Clear();
+            equipName2.Clear();
+            equipCode2.Clear();
+            equipNum2.Clear();
+            chamber2.Clear();
+
+            UncheckNameContains();
+        }
+        private void delBtn3_Click(object sender, RoutedEventArgs e)
+        {
+            time3.Clear();
+            charge3.Clear();
+            line3.Clear();
+            floor3.Clear();
+            bay3.Clear();
+            equipName3.Clear();
+            equipCode3.Clear();
+            equipNum3.Clear();
+            chamber3.Clear();
+
+            UncheckNameContains();
+        }
+        private void delBtn4_Click(object sender, RoutedEventArgs e)
+        {
+            time4.Clear();
+            charge4.Clear();
+            line4.Clear();
+            floor4.Clear();
+            bay4.Clear();
+            equipName4.Clear();
+            equipCode4.Clear();
+            equipNum4.Clear();
+            chamber4.Clear();
+
+            UncheckNameContains();
+            
+        }
+
+
+        private void delBtn5_Click(object sender, RoutedEventArgs e)
+        {
+            time5.Clear();
+            charge5.Clear();
+            line5.Clear();
+            floor5.Clear();
+            bay5.Clear();
+            equipName5.Clear();
+            equipCode5.Clear();
+            equipNum5.Clear();
+            chamber5.Clear();
+
+            UncheckNameContains();
+            
+        }
+
+        private void delBtn6_Click(object sender, RoutedEventArgs e)
+        {
+            time6.Clear();
+            charge6.Clear();
+            line6.Clear();
+            floor6.Clear();
+            bay6.Clear();
+            equipName6.Clear();
+            equipCode6.Clear();
+            equipNum6.Clear();
+            chamber6.Clear();
+
+            UncheckNameContains();
+        }
+
+
+        private void delBtn7_Click(object sender, RoutedEventArgs e)
+        {
+            time7.Clear();
+            charge7.Clear();
+            line7.Clear();
+            floor7.Clear();
+            bay7.Clear();
+            equipName7.Clear();
+            equipCode7.Clear();
+            equipNum7.Clear();
+            chamber7.Clear();
+
+            UncheckNameContains();
+        }
+
+
+        private void delBtn8_Click(object sender, RoutedEventArgs e)
+        {
+            time8.Clear();
+            charge8.Clear();
+            line8.Clear();
+            floor8.Clear();
+            bay8.Clear();
+            equipName8.Clear();
+            equipCode8.Clear();
+            equipNum8.Clear();
+            chamber8.Clear();
+
+            UncheckNameContains();
+        }
+
+
+        private void delBtn9_Click(object sender, RoutedEventArgs e)
+        {
+            time9.Clear();
+            charge9.Clear();
+            line9.Clear();
+            floor9.Clear();
+            bay9.Clear();
+            equipName9.Clear();
+            equipCode9.Clear();
+            equipNum9.Clear();
+            chamber9.Clear();
+
+            UncheckNameContains();
+           
+        }
+
+        private void delBtn10_Click(object sender, RoutedEventArgs e)
+        {
+            time10.Clear();
+            charge10.Clear();
+            line10.Clear();
+            floor10.Clear();
+            bay10.Clear();
+            equipName10.Clear();
+            equipCode10.Clear();
+            equipNum10.Clear();
+            chamber10.Clear();
+
+            UncheckNameContains();
         }
 
         private void sortBtn1_Click(object sender, RoutedEventArgs e)
@@ -2360,146 +1917,9 @@ namespace WpfApp3
             workSummaryText.Text += workerName10.Text + "\r\n\r\n";
         }
 
-
-        private void delBtn1_Click(object sender, RoutedEventArgs e)
-        {
-            // 딜리트 버튼을 누르면
-            // 작업 정보에 들어 있던 모든 텍스트 Clear
-
-            time1.Clear();
-            charge1.Clear();
-            line1.Clear();
-            floor1.Clear();
-            bay1.Clear();
-            equipName1.Clear();
-            equipCode1.Clear();
-            equipNum1.Clear();
-            chamber1.Clear();
-
-        }
-        private void delBtn2_Click(object sender, RoutedEventArgs e)
-        {
-            time2.Clear();
-            charge2.Clear();
-            line2.Clear();
-            floor2.Clear();
-            bay2.Clear();
-            equipName2.Clear();
-            equipCode2.Clear();
-            equipNum2.Clear();
-            chamber2.Clear();
-        }
-        private void delBtn3_Click(object sender, RoutedEventArgs e)
-        {
-            time3.Clear();
-            charge3.Clear();
-            line3.Clear();
-            floor3.Clear();
-            bay3.Clear();
-            equipName3.Clear();
-            equipCode3.Clear();
-            equipNum3.Clear();
-            chamber3.Clear();
-        }
-        private void delBtn4_Click(object sender, RoutedEventArgs e)
-        {
-            time4.Clear();
-            charge4.Clear();
-            line4.Clear();
-            floor4.Clear();
-            bay4.Clear();
-            equipName4.Clear();
-            equipCode4.Clear();
-            equipNum4.Clear();
-            chamber4.Clear();
-        }
-
-
-        private void delBtn5_Click(object sender, RoutedEventArgs e)
-        {
-            time5.Clear();
-            charge5.Clear();
-            line5.Clear();
-            floor5.Clear();
-            bay5.Clear();
-            equipName5.Clear();
-            equipCode5.Clear();
-            equipNum5.Clear();
-            chamber5.Clear();
-        }
-
-        private void delBtn6_Click(object sender, RoutedEventArgs e)
-        {
-            time6.Clear();
-            charge6.Clear();
-            line6.Clear();
-            floor6.Clear();
-            bay6.Clear();
-            equipName6.Clear();
-            equipCode6.Clear();
-            equipNum6.Clear();
-            chamber6.Clear();
-        }
-
-
-        private void delBtn7_Click(object sender, RoutedEventArgs e)
-        {
-            time7.Clear();
-            charge7.Clear();
-            line7.Clear();
-            floor7.Clear();
-            bay7.Clear();
-            equipName7.Clear();
-            equipCode7.Clear();
-            equipNum7.Clear();
-            chamber7.Clear();
-        }
-
-
-        private void delBtn8_Click(object sender, RoutedEventArgs e)
-        {
-            time8.Clear();
-            charge8.Clear();
-            line8.Clear();
-            floor8.Clear();
-            bay8.Clear();
-            equipName8.Clear();
-            equipCode8.Clear();
-            equipNum8.Clear();
-            chamber8.Clear();
-        }
-
-
-        private void delBtn9_Click(object sender, RoutedEventArgs e)
-        {
-            time9.Clear();
-            charge9.Clear();
-            line9.Clear();
-            floor9.Clear();
-            bay9.Clear();
-            equipName9.Clear();
-            equipCode9.Clear();
-            equipNum9.Clear();
-            chamber9.Clear();
-        }
-
-        private void delBtn10_Click(object sender, RoutedEventArgs e)
-        {
-            time10.Clear();
-            charge10.Clear();
-            line10.Clear();
-            floor10.Clear();
-            bay10.Clear();
-            equipName10.Clear();
-            equipCode10.Clear();
-            equipNum10.Clear();
-            chamber10.Clear();
-        }
-
         private void sumDel_Click(object sender, RoutedEventArgs e)
         {
             workSummaryText.Clear();
         }
     }
 }
-
