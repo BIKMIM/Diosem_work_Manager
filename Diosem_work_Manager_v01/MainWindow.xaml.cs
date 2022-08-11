@@ -199,8 +199,6 @@ namespace WpfApp3
             workerName10.Text = workerName10.Text.Replace($"{name}, ", "");
         }
 
-
-
         private void sylee_Unchecked(object sender, RoutedEventArgs e)
         {
             UncheckedName("이상엽");
@@ -840,6 +838,10 @@ namespace WpfApp3
 
             UncheckNameContains();
         }
+
+        
+        
+
 
         private void sortBtn1_Click(object sender, RoutedEventArgs e)
         {

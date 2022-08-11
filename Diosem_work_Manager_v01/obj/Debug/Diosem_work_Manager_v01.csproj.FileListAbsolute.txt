@@ -14,3 +14,11 @@ D:\C#\Diosem_work_Manager_v01\Diosem_work_Manager_v01\obj\Debug\Diosem_work_Mana
 D:\C#\Diosem_work_Manager_v01\Diosem_work_Manager_v01\obj\Debug\Diosem_work_Manager_v01.csproj.CoreCompileInputs.cache
 D:\C#\Diosem_work_Manager_v01\Diosem_work_Manager_v01\obj\Debug\Diosem_work_Manager_v01.exe
 D:\C#\Diosem_work_Manager_v01\Diosem_work_Manager_v01\obj\Debug\Diosem_work_Manager_v01.pdb
+D:\CSharp\Diosem_work_Manaver_v01\Diosem_work_Manager_v01\obj\Debug\Diosem_work_Manager_v01.csproj.AssemblyReference.cache
+D:\CSharp\Diosem_work_Manaver_v01\Diosem_work_Manager_v01\obj\Debug\Diosem_work_Manager_v01.csproj.SuggestedBindingRedirects.cache
+D:\CSharp\Diosem_work_Manaver_v01\Diosem_work_Manager_v01\obj\Debug\MainWindow.g.cs
+D:\CSharp\Diosem_work_Manaver_v01\Diosem_work_Manager_v01\obj\Debug\App.g.cs
+D:\CSharp\Diosem_work_Manaver_v01\Diosem_work_Manager_v01\obj\Debug\Diosem_work_Manager_v01_MarkupCompile.cache
+D:\CSharp\Diosem_work_Manaver_v01\Diosem_work_Manager_v01\obj\Debug\Diosem_work_Manager_v01_MarkupCompile.lref
+D:\CSharp\Diosem_work_Manaver_v01\Diosem_work_Manager_v01\obj\Debug\Diosem_work_Manager_v01.exe
+D:\CSharp\Diosem_work_Manaver_v01\Diosem_work_Manager_v01\obj\Debug\Diosem_work_Manager_v01.pdb
